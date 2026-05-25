@@ -99,3 +99,18 @@ footer {
     margin-bottom: 15px;
 }
 
+.color-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+

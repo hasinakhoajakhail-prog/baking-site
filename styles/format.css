@@ -1,1 +1,30 @@
+:root {
+    --pink: #f7dce5;
+    --rose: #e8b7c8;
+    --brown: #8b5e3c;
+    --cream: #fff7f2;
+    --dark: #3a2e2e;
+    --white: #ffffff;
+
+    --font-main: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--cream);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--brown);
+    text-align: center;
+}
+
+a {
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: 600;
+}
 

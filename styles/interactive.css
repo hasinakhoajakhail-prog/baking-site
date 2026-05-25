@@ -19,3 +19,8 @@ a:hover {
     transform: scale(1.05);
 }
 
+.recipe-card:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+    background-color: var(--cream);
+}

@@ -24,3 +24,34 @@ a:hover {
     transition: 0.3s ease;
     background-color: var(--cream);
 }
+
+.collapse-toggle {
+    width: 100%;
+    background: #ffdce8;
+    border: 2px solid #ffb6cf;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.collapse-toggle:hover {
+    background: #ffc9dd;
+}
+
+.collapse-content {
+    display: none;
+    padding: 15px;
+    background: #fff7fb;
+    border: 1px solid #ffd6e8;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.collapse-content.active {
+    display: block;
+}
+

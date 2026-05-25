@@ -31,22 +31,92 @@
 
     <section class="recipe-grid">
 
+        <!-- Soft Vanilla Cupcakes -->
         <article class="recipe-card">
-            <img src="images/cupcakes.jpg" alt="Soft vanilla cupcakes">
-            <h3>Soft Vanilla Cupcakes</h3>
-            <p>Fluffy, light, and topped with a pastel buttercream swirl.</p>
+            <button class="collapse-toggle">Soft Vanilla Cupcakes</button>
+
+            <div class="collapse-content">
+                <img src="images/cupcakes.jpg" alt="Soft vanilla cupcakes">
+
+                <h4>Ingredients</h4>
+                <ul>
+                    <li>1 ½ cups flour</li>
+                    <li>1 cup sugar</li>
+                    <li>1 ½ tsp baking powder</li>
+                    <li>½ cup softened butter</li>
+                    <li>2 eggs</li>
+                    <li>½ cup milk</li>
+                    <li>1 tbsp vanilla</li>
+                </ul>
+
+                <h4>Steps</h4>
+                <ol>
+                    <li>Preheat oven to 350°F.</li>
+                    <li>Whisk dry ingredients.</li>
+                    <li>Add butter, eggs, milk, and vanilla.</li>
+                    <li>Mix until smooth.</li>
+                    <li>Fill cupcake liners ¾ full.</li>
+                    <li>Bake 18–20 minutes.</li>
+                </ol>
+            </div>
         </article>
 
+        <!-- Warm Chocolate Chip Cookies -->
         <article class="recipe-card">
-            <img src="images/cookies.jpg" alt="Warm chocolate chip cookies">
-            <h3>Warm Chocolate Chip Cookies</h3>
-            <p>Gooey centers, golden edges, and the perfect cozy snack.</p>
+            <button class="collapse-toggle">Warm Chocolate Chip Cookies</button>
+
+            <div class="collapse-content">
+                <img src="images/cookies.jpg" alt="Warm chocolate chip cookies">
+
+                <h4>Ingredients</h4>
+                <ul>
+                    <li>1 cup butter</li>
+                    <li>1 cup brown sugar</li>
+                    <li>½ cup white sugar</li>
+                    <li>2 eggs</li>
+                    <li>2 ½ cups flour</li>
+                    <li>1 tsp baking soda</li>
+                    <li>1 tsp salt</li>
+                    <li>1 cup chocolate chips</li>
+                </ul>
+
+                <h4>Steps</h4>
+                <ol>
+                    <li>Cream butter and sugars.</li>
+                    <li>Add eggs.</li>
+                    <li>Mix in dry ingredients.</li>
+                    <li>Fold in chocolate chips.</li>
+                    <li>Scoop onto baking sheet.</li>
+                    <li>Bake at 350°F for 10–12 minutes.</li>
+                </ol>
+            </div>
         </article>
 
+        <!-- Strawberry Milk Cake -->
         <article class="recipe-card">
-            <img src="images/strawberry-cake.jpg" alt="Strawberry milk cake">
-            <h3>Strawberry Milk Cake</h3>
-            <p>A soft pink cake with a sweet, creamy strawberry flavor.</p>
+            <button class="collapse-toggle">Strawberry Milk Cake</button>
+
+            <div class="collapse-content">
+                <img src="images/strawberry-cake.jpg" alt="Strawberry milk cake">
+
+                <h4>Ingredients</h4>
+                <ul>
+                    <li>1 box white cake mix</li>
+                    <li>1 cup milk</li>
+                    <li>½ cup oil</li>
+                    <li>3 eggs</li>
+                    <li>1 packet strawberry Jell‑O</li>
+                    <li>Fresh strawberries (optional)</li>
+                </ul>
+
+                <h4>Steps</h4>
+                <ol>
+                    <li>Mix all ingredients.</li>
+                    <li>Pour into a greased pan.</li>
+                    <li>Bake at 350°F for 25–30 minutes.</li>
+                    <li>Top with whipped cream + strawberries.</li>
+                </ol>
+            </div>
         </article>
 
     </section>
@@ -55,6 +125,18 @@
 <footer>
     <p>© 2026 Hasina’s Baking Haven</p>
 </footer>
+
+<!-- Collapsible Script -->
+<script>
+    const toggles = document.querySelectorAll('.collapse-toggle');
+
+    toggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            content.classList.toggle('active');
+        });
+    });
+</script>
 
 </body>
 </html>

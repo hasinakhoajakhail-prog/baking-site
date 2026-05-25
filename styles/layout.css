@@ -58,4 +58,18 @@ footer {
     transition: 0.3s ease;
 }
 
+/* ---------- ABOUT PAGE ---------- */
+.about-hero, .about-story, .about-list {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    margin: 8px 0;
+}
 

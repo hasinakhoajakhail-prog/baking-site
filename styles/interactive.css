@@ -51,22 +51,3 @@ a:hover {
     margin-top: 10px;
 }
 
-.collapse-content.active {
-    display: block;
-}
-
-/* Collapsible content hidden by default */
-.collapse-content {
-    display: none;
-}
-
-/* When active, show it */
-.collapse-content.active {
-    display: block;
-}
-
-.collapse-content {
-    transition: all 0.3s ease;
-}
-
-
